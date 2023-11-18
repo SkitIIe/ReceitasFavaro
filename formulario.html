@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <title>Formulário</title>
+    <style>
+        .dimensao {
+            height:60px calc(100vh - 100px);
+            overflow-y: auto;
+            border: 0px solid #000;
+            padding: 0;
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body class="dimensao">
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light align-self-auto">
+        <div>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="formulario.html">Formulário</a>
+                    </li>
+
+              
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <form action="mailto:email@exemplo" method="post" enctype="text/plain">
+        <div class="container px-5 my-5">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input class="form-control" id="nome" type="text" placeholder="Nome"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="nome:required">Nome is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="eMail">E-mail</label>
+                    <input class="form-control" id="eMail" type="email" placeholder="E-mail"
+                        data-sb-validations="required,email" />
+                    <div class="invalid-feedback" data-sb-feedback="eMail:required">E-mail is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="eMail:email">E-mail Email is not valid.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="rua">Rua</label>
+                    <input class="form-control" id="rua" type="text" placeholder="Rua" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="rua:required">Rua is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="numero">Número</label>
+                    <input class="form-control" id="numero" type="text" placeholder="Número"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="numero:required">Número is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="complemento">Complemento</label>
+                    <input class="form-control" id="complemento" type="text" placeholder="Complemento"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="complemento:required">Complemento is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="cidade">Cidade</label>
+                    <input class="form-control" id="cidade" type="text" placeholder="Cidade"
+                        data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="cidade:required">Cidade is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="UF">UF</label>
+                    <input class="form-control" id="cep" type="text" placeholder="UF" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="UF:required">CEP is required.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="cep">CEP</label>
+                    <input class="form-control" id="cep" type="text" placeholder="CEP" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="cep:required">CEP is required.</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a
+                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    </form>
+    <footer class="bg-dark text-light mt-5 p-3 text-center" dimensao>
+        <div class="container">
+            <p>&copy; 2023 Favaro.Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+
+</html>
